@@ -1,0 +1,18 @@
+-forum catalog
+
+
+
+-displays all posts on page
+-
+
+
+
+
+
+
+
+
+
+-click thread to open it
+-thread updates real time like chat
+-
