@@ -1,0 +1,36 @@
+<div id="post-table">
+		<form>
+			<textarea name="post" required></textarea>
+
+<!-- to make the file button look good, use a jquery to load the file in with some script or something perhaps-->
+			<input type="file" id="imageupload" class="filestyle" accept="image/gif, image/jpeg, image/png" data-classButton="btn btn-primary" data-input="false" data-buttonText="Upload Image" data-buttonBefore="false">
+			<button id="submitpost" type="submit">Add reply</button>
+		</form>
+
+
+		<div class="posts">
+
+		<h1>TEST TEST TEST</h1>
+
+		<div class="OP">
+			<div class="post">
+				<div id="rID">
+					<span id="time">{{thread.postTime}}</span>
+				</div>
+				<blockquote class="message">{{thread.summary}}</blockquote>
+			</div>
+		</div>
+			
+<!-- 		<div class="posts">
+
+			<div class="post">
+				<div id="rID">
+					<span id="time"><%= posts[i].time %></span>
+					<span id="rID1"><%= posts[i].rID1 %></span><span id="rID2"><%= posts[i].rID2 %></span><span id="rID3"><%= posts[i].rID3 %></span><span id="rID4"><%= posts[i].rID4 %></span><span id="rID5"><%= posts[i].rID5 %></span><span id="rID6"><%= posts[i].rID6 %></span><span id="rID7"><%= posts[i].rID7 %></span><span id="rID8"><%= posts[i].rID8 %></span>
+				</div>
+					<blockquote class="message"><%= posts[i].post %></blockquote>
+				</div>
+			<% } %>
+		</div> -->
+
+	</div>

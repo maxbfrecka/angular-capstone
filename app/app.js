@@ -1,4 +1,5 @@
-angular.module('myApp', ['firebase', 'catalog', 'thread', 'threadPreview'])
+angular.module('myApp', ['firebase', 
+  'catalog', 'thread', 'threadPreview', 'newPost', 'views'])
 
 
 

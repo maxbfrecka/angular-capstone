@@ -10,6 +10,15 @@ angular.module('threadPreview',[])
 	  	scope.threads = testData.threads;
 
 
+	  	//mock of posttime
+	  	scope.postTime = post_time();
+	  	console.log('post time is ' + scope.postTime);
+
+
+	  	scope.randomColor = randomRGBcolor();
+	  	console.log(scope.randomColor)
+
+
 	  }
   }
 }])

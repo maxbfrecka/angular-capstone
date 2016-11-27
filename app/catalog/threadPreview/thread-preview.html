@@ -1,13 +1,28 @@
-<div class="threadPreview" id="thread.id">
+<div class="threadPreview" id="thread.ID">
+<a href="#/{{thread.ID}}">
+	<div class="threadPreviewContent">
 
-<h3>{{thread.title}}</h3>
-by <span>{{thread.OP}}<span>
-<p>{{thread.summary}}</p>
-
-
-
-
-
-
+		<img src="http://www.quickanddirtytips.com/sites/default/files/styles/insert_small/public/images/3059/dog-running.jpg" alt="Lamp" width="100" height="100">
+		<h3 class="previewTitle">{{thread.title}}</h3>
+		<span class="previewPostTime">{{thread.postTime}}</span>
+		by <span class="previewAuthor">{{thread.OP}}<span>
+		<div class="summaryContainer">
+			<p class="previewSummary">{{thread.summary}}</p>
+		</div>
+	</div>
+</a>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- place in main div for random color content -->
+<!-- ng-style="{'background-color': thread.randomColor}" -->

@@ -1,18 +1,39 @@
--forum catalog
+-click thread preview - > links to #/{{thread.ID}}
 
 
 
--displays all posts on page
+
+
+
+
+
+->click on thread to enter thread view
+->live updates inside of threads
+->routes for threads
+->login page
+->click other post to reply to it
+->
+
+
+
+
+->SETTINGS PAGE
+-turn off randomizations
+-let users set their own schemes and settings
+-turn off live-page-updates
 -
 
 
 
+-music player in top
 
 
 
 
+major features:
+-login/account/profile
+-image creator
+-music player
+-reviews page
+-page for social
 
-
--click thread to open it
--thread updates real time like chat
--
