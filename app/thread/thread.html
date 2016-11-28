@@ -1,25 +1,40 @@
 <div id="post-table">
-		<form>
-			<textarea name="post" required></textarea>
 
-<!-- to make the file button look good, use a jquery to load the file in with some script or something perhaps-->
+		<!-- <form>
+			<textarea id="replyThread" name="post" required></textarea>
 			<input type="file" id="imageupload" class="filestyle" accept="image/gif, image/jpeg, image/png" data-classButton="btn btn-primary" data-input="false" data-buttonText="Upload Image" data-buttonBefore="false">
 			<button id="submitpost" type="submit">Add reply</button>
-		</form>
+		</form> -->
+
+	<div class="headColumns">
+		<div class="headContainer" ng-show="!newReplyClick">
+				<div ng-click="newReplyClick=!newReplyClick"  class="makeNewPost">
+					Add Reply
+				</div>
+		</div>
+	</div>
 
 
-		<div class="posts">
+	<mx-new-reply ng-show="newReplyClick"></mx-new-reply>
 
-		<h1>TEST TEST TEST</h1>
+
+	<div class="posts">
+		<h1>{{thread.title}}</h1>
 
 		<div class="OP">
 			<div class="post">
+				
 				<div id="rID">
-					<span id="time">{{thread.postTime}}</span>
+					<span id="time">{{thread.postTime}}</span><span><mx-rid></mx-rid>
 				</div>
-				<blockquote class="message">{{thread.summary}}</blockquote>
-			</div>
-		</div>
+
+				<div id="postBody">
+					<img class="postImage" src="{{thread.img}}" alt="gone" width="190" height="190">
+					<blockquote class="postMessage">{{thread.summary}}</blockquote>
+				</div>
+
+	</div>
+</div>
 			
 <!-- 		<div class="posts">
 

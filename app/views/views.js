@@ -20,6 +20,5 @@ angular.module('views', ['ngRoute'])
 
   .controller('threadController', ['$scope', '$routeParams', 'testData', function($scope, $routeParams, testData){
   	$scope.threads = testData.threads;
-  	console.log($scope.threads[$routeParams.ID])
-  	console.log($scope.threads)
+  	console.log("route is" + $scope.threads[$routeParams.ID])
   }])

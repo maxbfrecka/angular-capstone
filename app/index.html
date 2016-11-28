@@ -11,20 +11,24 @@
 
 <body>
 
+<div class="navbarMargin">
 	<div class="navbar-controller">
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">MX-FORUM</a>
+		      <a class="navbar-brand" href="/app/#/">MX-FORUM</a>
 		    </div>
 		    <ul class="nav navbar-nav">
-		      <li id="navbar_links" class="active"><a href="/">CATALOG</a></li>
+		      <li id="navbar_links" class="active"><a href="/app/#/">CATALOG</a></li>
 		    </ul>
 		  </div>
 		</nav>
 	</div>
+</div>
 
-	<div ng-view></div>
+	<div class="viewContent">
+		<div ng-view></div>
+	</div>
 
 
   
@@ -54,14 +58,18 @@
 	<script src="./bower_components/angularfire/dist/angularfire.min.js"></script>
 	<script src="./bower_components/firebase/firebase.js"></script>
 
+	<script src="../node_modules/lodash/lodash.js"></script>
+
 
 	<script src="./app.js"></script>
 	<script src="./catalog/catalog.js"></script>
 	<script src="./thread/thread.js"></script>
+	<script src="./thread/newReply/new-reply.js"></script>
 	<script src="./catalog/threadPreview/thread-preview.js"></script>
 	<script src="./newPost/new-post.js"></script>
 	<script src="./views/views.js"></script>
 	<script src="./app.js"></script>
+	<script src="./rID/rID.js"></script>
 
 	<script type="text/javascript" src="firebase.config.js"></script>
 

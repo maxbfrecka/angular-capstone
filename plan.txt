@@ -1,15 +1,12 @@
 -click thread preview - > links to #/{{thread.ID}}
+-goes to that view... the :ID
+-and it SHOULD get the ID
 
 
 
 
-
-
-
-
-->click on thread to enter thread view
+->randomized tags
 ->live updates inside of threads
-->routes for threads
 ->login page
 ->click other post to reply to it
 ->
@@ -21,7 +18,7 @@
 -turn off randomizations
 -let users set their own schemes and settings
 -turn off live-page-updates
--
+
 
 
 
@@ -37,3 +34,14 @@ major features:
 -reviews page
 -page for social
 
+
+
+
+
+->database structure for threads and posts?
+
+
+
+
+
+->randomize ID tags
