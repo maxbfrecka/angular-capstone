@@ -1,22 +1,15 @@
 angular.module('threadPreview',[])
 
-.directive('mxThreadPreview', ['testData', function(testData){
+.directive('mxThreadPreview', ['testData', 'threadData', function(testData, threadData){
 	return {
 		restrict: 'E',
 	  templateUrl: 'catalog/threadPreview/thread-preview.html',
 	  scope: true,
 	  transclude: true,
 	  link: function(scope, element, attrs){
-	  	scope.threads = testData.threads;
+	  	scope.threads = threadData.threads;
 
 
-	  	//mock of posttime
-	  	scope.postTime = post_time();
-	  	console.log('post time is ' + scope.postTime);
-
-
-	  	scope.randomColor = randomRGBcolor();
-	  	console.log(scope.randomColor)
 
 
 	  }

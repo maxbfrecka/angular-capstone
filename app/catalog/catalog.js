@@ -1,13 +1,13 @@
 angular.module('catalog',[])
 
-.directive('mxCatalog', ['testData', 'newPostClick', function(testData, newPostClick){
+.directive('mxCatalog', ['testData', 'newPostClick', 'threadData', function(testData, newPostClick, threadData){
 	return {
 		restrict: 'E',
 	  templateUrl: 'catalog/catalog.html',
 	  scope: true,
 	  transclude: true,
 	  link: function(scope, element, attrs){
-	  	scope.threads = testData.threads;
+	  	scope.threads = threadData.threads;
 	  	scope.newPostClick = newPostClick.if
 
 	  	scope.postTime = post_time()
@@ -24,6 +24,18 @@ angular.module('catalog',[])
 	return newPostClick
 })
 
+.factory('threadData', ['$firebaseArray', function($firebaseArray){
+	var threadData = {}	
+	var ref = firebase.database().ref('threads');
+
+	threadData.threads = $firebaseArray(ref);
+	
+	threadData.currentID = null
+	threadData.currentThread = null
+
+	return threadData
+
+}])
 
 
 

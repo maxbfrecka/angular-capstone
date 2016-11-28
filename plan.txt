@@ -39,9 +39,47 @@ major features:
 
 
 ->database structure for threads and posts?
+-> new thread: type it in, post it...
+-> sends it to database, opens "thread" page with your post
+-> how do replies get added? where are they stored?
+-> 
+
+
+
+
+threadNumber
 
 
 
 
 
 ->randomize ID tags
+
+
+
+
+
+database structure for message board
+
+
+
+WHY IS THE ROUTE MESSING UP IN THE REPLY AREA
+
+
+
+
+
+
+
+
+->when press reply, it loads in all the replies...
+
+
+
+
+
+
+
+
+
+
