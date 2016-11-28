@@ -38,6 +38,9 @@ angular.module('thread',[])
 			tc.currentReplies = search(tc.currentID, tc.replies);
 			console.log(tc.currentReplies)
 
+			tc.replies.$loaded(function(){
+				tc.currentReplies = search(tc.currentID, tc.replies);
+			})
 			
 
 
@@ -74,7 +77,9 @@ angular.module('thread',[])
            	}});
             send.reply = '';
             console.log(tc.currentReplies)
-            tc.currentReplies = search(tc.currentID, tc.replies);
+            tc.replies.$loaded(function(){
+							tc.currentReplies = search(tc.currentID, tc.replies);
+							})
           }
       };
 
